@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBTI Quiz</title>
+  <link rel="stylesheet" href="MBTI_quiz.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div id="welcome-screen">
+      <h1>Discover Your MBTI Type</h1>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+      <div id="progress">Question <span id="current">1</span> of <span id="total">0</span></div>
+      <div id="question-text"></div>
+      <div id="answers"></div>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <div id="result-screen" class="hidden">
+      <h2>Your MBTI Type: <span id="mbti-type"></span></h2>
+      <p id="mbti-message"></p>
+      <p class="note">🌱 Remember: MBTI isn’t a permanent label. As you grow and experience life, your preferences can shift. Embrace the journey.</p>
+      <button id="restart-btn">Retake Quiz</button>
+    </div>
+  </div>
+
+  <script src="MBTI_quiz.js"></script>
+</body>
+</html>
